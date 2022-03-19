@@ -1,23 +1,28 @@
+// This is not your configuration file, This is purely an example!
+// You may delete this file if you wish as it serves no purpose, It's just there for if you get stuck with anything.
+// Your actual configuration file is "config.js"
+
 
         module.exports = {
             bot: {
-                token: "", // Bot List Bot Token from https://discord.com/developers/applications
-                prefix: "",
-                owners: [""],
-                mongourl: "",  //https://mongodb.com/cloud/atlas/register
+                token: "OTA0NzA2OTk2MzkyMDQ2Njcz.YX_cDA.8-wjVx9Lm5zYMW41L6nW_Kr6n6k", // Bot List Bot Token
+                prefix: "!",
+                owners: ["934397877206261780","709086379241373707"],
+                mongourl: "mongodb+srv://juleszz:juleszz@cluster0.c8het.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
                 servers: {
-                    token: "", // Server List Bot Token
-                    prefix: ""
+                    token: "OTA0NzA2OTk2MzkyMDQ2Njcz.YX_cDA.8-wjVx9Lm5zYMW41L6nW_Kr6n6k", // Server List Bot Token
+                    prefix: "!!"
                 }
             },
         
             website: {
-                callback: "", //example : https://vcodes.xyz avoid / at last. 
-                secret: "",
-                clientID: "", // Bot client id.
+                callback: "",
+                secret: "cuHNLjCoalLyUR_HsHywUa5vVQeJuKwn",
+                clientID: "904706996392046673", // Bot client id.
                 tags: [ "Moderation", "Fun", "Minecraft","Economy","Guard","NSFW","Anime","Invite","Music","Logging", "Web Dashboard", "Reddit", "Youtube", "Twitch", "Crypto", "Leveling", "Game", "Roleplay", "Utility", "Turkish" ],
                 languages: [
-                    { flag: 'gb', code: 'en', name: 'English' },
+                    { flag: 'gb', code: 'fr', name: 'Français' },
+          { flag: 'en', code: 'en', name: 'English' },
                     { flag: 'tr', code: 'tr', name: 'Türkçe' },
                     { flag: 'de', code: 'de', name: 'Deutsch' }
                 ],
@@ -124,11 +129,11 @@
             },
         
             server: {
-                id: "",
+                id: "834782198237364234",
                 invite: "https://discord.gg/z7dBzygse4",
                 roles: {
-                    administrator: "",
-                    moderator: "",
+                    administrator: "943679210550071346",
+                    moderator: "943679214559842355",
                     profile: {
                         sitecreator : "",
                         booster: "",
@@ -154,12 +159,12 @@
                     }
                 },
                 channels: {
-                    codelog: "",
-                    login: "",
-                    webstatus: "",
-                    uptimelog: "",
-                    botlog: "",
-                    votes: ""
+                    codelog: "954441807675162645",
+                    login: "954441892962119801",
+                    webstatus: "954441978731446353",
+                    uptimelog: "954442041016864838",
+                    botlog: "954442099137343588",
+                    votes: "954442167114424360"
                 }
             }
         
