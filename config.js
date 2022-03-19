@@ -11,7 +11,7 @@
                 mongourl: "mongodb+srv://juleszz:juleszz@cluster0.c8het.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
                 servers: {
                     token: "OTA0NzA2OTk2MzkyMDQ2Njcz.YX_cDA.8-wjVx9Lm5zYMW41L6nW_Kr6n6k", // Server List Bot Token
-                    prefix: "!!"
+                    prefix: "!"
                 }
             },
         
@@ -135,11 +135,11 @@
                     administrator: "943679210550071346",
                     moderator: "943679214559842355",
                     profile: {
-                        sitecreator : "",
-                        booster: "",
-                        sponsor: "",
-                        supporter: "",
-                        partnerRole: ""
+                        sitecreator : "943679243429232771",
+                        booster: "853241343316852736",
+                        sponsor: "943679244884639824",
+                        supporter: "943679245929042000",
+                        partnerRole: "943679246969208902"
                     },
                     codeshare: {
                         javascript: "",
@@ -152,10 +152,10 @@
                         twentyInvite: ""
                     },
                     botlist: {
-                        developer: "",
-                        certified_developer: "",
-                        bot: "",
-                        certified_bot: "",
+                        developer: "954767547998277642",
+                        certified_developer: "954767667821154354",
+                        bot: "954767745260597278",
+                        certified_bot: "954767911581524018",
                     }
                 },
                 channels: {
