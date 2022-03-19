@@ -80,8 +80,8 @@
     app.use(passport.session());
   
   
-    app.engine("vcodes-xyz", ejs.renderFile);
-    app.set("view engine", "vcodes-xyz");
+    app.engine("tokume-list.xyz", ejs.renderFile);
+    app.set("view engine", "tokume-list.xyz");
   
     app.use(bodyParser.json());
     app.use(bodyParser.urlencoded({
@@ -112,10 +112,10 @@
         let banned = await banSchema.findOne({user: req.user.id})
         if(banned) {
         client.users.fetch(req.user.id).then(async a => {
-        client.channels.cache.get(channels.login).send(new Discord.MessageEmbed().setAuthor(a.username, a.avatarURL({dynamic: true})).setThumbnail(a.avatarURL({dynamic: true})).setColor("RED").setDescription(`[**${a.username}**#${a.discriminator}](https://vcodes.xyz/user/${a.id}) isimli kullanıcı **siteye** giriş yapmaya çalıştı fakat siteden engellendiği için giriş yapamadı.`).addField("Username", a.username).addField("User ID", a.id).addField("User Discriminator", a.discriminator))
+        client.channels.cache.get(channels.login).send(new Discord.MessageEmbed().setAuthor(a.username, a.avatarURL({dynamic: true})).setThumbnail(a.avatarURL({dynamic: true})).setColor("RED").setDescription(`[**${a.username}**#${a.discriminator}](https://tokume-list.xyz/user/${a.id}) L'utilisateur nommé **site** a essayé de se connecter, mais n'a pas pu se connecter car il a été bloqué sur le site.`).addField("Username", a.username).addField("User ID", a.id).addField("User Discriminator", a.discriminator))
         })
         req.session.destroy(() => {
-        res.json({ login: false, message: "You have been blocked from vCodes.", logout: true })
+        res.json({ login: false, message: "You have been blocked from tokume-list.", logout: true })
         req.logout();
         });
         } else {
@@ -130,7 +130,7 @@
         } catch {};
         res.redirect(req.session.backURL || '/')
         client.users.fetch(req.user.id).then(async a => {
-        client.channels.cache.get(channels.login).send(new Discord.MessageEmbed().setAuthor(a.username, a.avatarURL({dynamic: true})).setThumbnail(a.avatarURL({dynamic: true})).setColor("GREEN").setDescription(`[**${a.username}**#${a.discriminator}](https://vcodes.xyz/user/${a.id}) isimli kullanıcı **siteye** giriş yaptı.`).addField("Username", a.username).addField("User ID", a.id).addField("User Discriminator", a.discriminator))
+        client.channels.cache.get(channels.login).send(new Discord.MessageEmbed().setAuthor(a.username, a.avatarURL({dynamic: true})).setThumbnail(a.avatarURL({dynamic: true})).setColor("GREEN").setDescription(`[**${a.username}**#${a.discriminator}](https://tokume-list.xyz/user/${a.id}) Utilisateur nommé **site** connecté.`).addField("Username", a.username).addField("User ID", a.id).addField("User Discriminator", a.discriminator))
         
         })
         }
@@ -246,7 +246,7 @@
           if(client.guilds.cache.get(config.server.id).members.cache.get(req.user.id).roles.cache.get(global.config.server.roles.administrator) || client.guilds.cache.get(config.server.id).members.cache.get(req.user.id).roles.cache.get(global.config.server.roles.moderator) || req.user.id === "714451348212678658") {
               next();
               } else {
-              res.redirect("/error?code=403&message=You is not competent to do this.")
+              res.redirect("/error?code=403&message=You do not have permission to go to this page")
           }
         } else {
           req.session.backURL = req.url;
