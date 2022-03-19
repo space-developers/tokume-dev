@@ -46,7 +46,7 @@ serverClient.on('message', async message => {
 
 serverClient.on('ready',async () => {
     console.log("[vcodes.xyz/servers]: Bot successfully connected as "+serverClient.user.tag+".");
-    serverClient.user.setPresence({ activity: { type: 'WATCHING', name: '-bump & -vote | vcodes.xyz/servers' }, status: "dnd" });
+    serverClient.user.setPresence({ activity: { type: 'WATCHING', name: '-bump & -vote | tokume-list.xyz/servers' }, status: "dnd" });
 });
 
 serverClient.makeid = length => {
