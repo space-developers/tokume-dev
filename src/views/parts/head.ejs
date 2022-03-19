@@ -1,4 +1,4 @@
-<%- include('./meta.ejs') %>
+<%- include('./meta.ejs'), {req} %>
 <style>
 .bg-indigo-600 {
     --tw-bg-opacity: 1;
@@ -52,34 +52,34 @@
           <ul class="navbar-nav mainlink mr-auto">
             <% if(!req.originalUrl.includes('/server')) { %>
             <li class="nav-item">
-              <a title="vcodes" class="nav-link nvhome" href="/"><i class="fal fa-home mr-1"></i> Home</a>
+              <a title="tokume-dev" class="nav-link nvhome" href="/"><i class="fal fa-home mr-1"></i> Home</a>
             </li>
             <li class="nav-item">
-              <a title="vcodes" class="nav-link" href="/bots"><i class="fal fa-robot mr-1"></i> Bots</a>
+              <a title="tokume-dev" class="nav-link" href="/bots"><i class="fal fa-robot mr-1"></i> Bots</a>
             </li>
 
             <% if(user) {%>
             <li class="nav-item">
-                <a title="vcodes" class="nav-link" href="/addbot"><i class="fal fa-plus mr-1"></i> Add Bot</a>
+                <a title="tokume-dev" class="nav-link" href="/addbot"><i class="fal fa-plus mr-1"></i> Add Bot</a>
             </li>
             <% } %>
             <li class="nav-item">
-                <a title="vcodes" class="nav-link" href="/servers"><i class="fal fa-server mr-1"></i> Servers</a>
+                <a title="tokume-dev" class="nav-link" href="/servers"><i class="fal fa-server mr-1"></i> Servers</a>
             </li>
             
             <% } else { %>
             <li class="nav-item">
-              <a title="vcodes" class="nav-link nvhome" href="/servers"><i class="fal fa-home mr-1"></i> Home</a>
+              <a title="tokume-dev" class="nav-link nvhome" href="/servers"><i class="fal fa-home mr-1"></i> Home</a>
             </li>
             <li class="nav-item">
-                <a title="vcodes" class="nav-link" href="/servers/tags"><i class="fal fa-tags mr-1"></i> Tags</a>
+                <a title="tokume-dev" class="nav-link" href="/servers/tags"><i class="fal fa-tags mr-1"></i> Tags</a>
             </li>
             <li class="nav-item">
-                <a title="vcodes" class="nav-link" href="/"><i class="fal fa-robot mr-1"></i> Bots</a>
+                <a title="tokume-dev" class="nav-link" href="/"><i class="fal fa-robot mr-1"></i> Bots</a>
             </li>
             <% if(user) {%>
             <li class="nav-item">
-                <a title="vcodes" class="nav-link" href="/server/add"><i class="fal fa-plus mr-1"></i> Add Server</a>
+                <a title="tokume-dev" class="nav-link" href="/server/add"><i class="fal fa-plus mr-1"></i> Add Server</a>
             </li>
             <% } %>
             <% } %>
