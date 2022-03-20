@@ -5,12 +5,12 @@
 
         module.exports = {
             bot: {
-                token: "OTA0NzA2OTk2MzkyMDQ2Njcz.YX_cDA.8-wjVx9Lm5zYMW41L6nW_Kr6n6k", // Bot List Bot Token
+                token: "OTA0NzA2OTk2MzkyMDQ2Njcz.YX_cDA.Zat3GGREQY2Jq4Uku4_Et8wxf2I", // Bot List Bot Token
                 prefix: "!",
                 owners: ["934397877206261780","709086379241373707"],
                 mongourl: "mongodb+srv://juleszz:juleszz@cluster0.c8het.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
                 servers: {
-                    token: "OTA0NzA2OTk2MzkyMDQ2Njcz.YX_cDA.8-wjVx9Lm5zYMW41L6nW_Kr6n6k", // Server List Bot Token
+                    token: "OTA0NzA2OTk2MzkyMDQ2Njcz.YX_cDA.Zat3GGREQY2Jq4Uku4_Et8wxf2I", // Server List Bot Token
                     prefix: "!"
                 }
             },
