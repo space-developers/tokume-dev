@@ -80,8 +80,8 @@
     app.use(passport.session());
   
   
-    app.engine("tokume-list.xyz", ejs.renderFile);
-    app.set("view engine", "tokume-list.xyz");
+    app.engine("tokume.herokuapp.com", ejs.renderFile);
+    app.set("view engine", "tokume.herokuapp.com");
   
     app.use(bodyParser.json());
     app.use(bodyParser.urlencoded({
