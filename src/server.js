@@ -160,7 +160,7 @@
     io.on('connection', socket => {
         io.emit("userCount", io.engine.clientsCount);
     });
-    http.listen(80, () => { console.log("[vcodes.xyz]: Website running on 80 port.")});
+    http.listen(8080, () => { console.log("[vcodes.xyz]: Website running on 8080 port.")});
 
     //------------------- Routers -------------------//
 
